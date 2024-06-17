@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Welcome to GameWorld!</title>
+      
+	<!-- Loads a CSS style file -->
+	<link rel="stylesheet" href="WorkingStyles.css">
+	
+    <!-- Loads a javascript library file -->
+    <script src="WorkingLibrary.js"></script>
+  </head>
+
+  <body>
+	<p class="pageTitle" id="pageTitle_id"></p>
+	 
+	<div class="workingContainer"> 
+    <div class="workingSpace" id="workingSpace_id"></div>
+    <div class="buttonSpace">
+      <button style="background-color:MediumSeaGreen;" onclick="PlayGame()" class="btn">Easy Mode</button>
+	  <button style="background-color:Tomato;" onclick="PlayGame2()" class="btn">Hard Mode</button>
+      <button onclick="ClearWorkingSpace()" class="btn">Clear!</button>
+	  <button style="background-color:green;" onclick="location.href='drawingtool.html'" class="btn">Drawing Tool</button>
+    </div>
+	<div>
+    <!-- Loads your javascript working file -->
+    <script src="MyWorkingSpace.js"></script>
+  </body>
+</html>

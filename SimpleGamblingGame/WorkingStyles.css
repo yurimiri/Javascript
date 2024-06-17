@@ -1,0 +1,105 @@
+ html {
+	height: 100vh;
+    background: url(15548.jpg) no-repeat center;
+    background-size: cover;
+ }
+ /* image resource = "https://kr.freepik.com/search?format=search&img=1&last_filter=img&last_value=1&query=&type=vector" */
+ 
+ body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	}
+
+.workingContainer {
+    display: flex;
+	flex-wrap: wrap;
+	}
+	
+.workingSpace {
+    margin: 20 auto;
+	width: 600px;
+	height: 600px;
+	min-height: 600px;
+	border: 4px red solid;
+	white-space: pre-wrap;
+	}
+	
+.buttonSpace {	
+    margin-left: 20px;
+	align-items: center;
+	border: 2px blue solid;
+    width: 300px;
+	height: 600px;       
+	}
+
+.workingText {
+	font-family: 'Courier New', monospace;
+    font-size: 30px;
+	}
+
+.btn {
+    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+    background-color: white;
+    margin: 10px; 
+	}
+
+.btn:hover {
+	background-color: gray
+	}
+	
+.pageTitle {
+	width: 100%;
+	text-align: center;
+}
+
+.game__board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.game__score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 0%;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+}	
+
+.game__pc-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.game__pc-selection--image {
+    width: 100%;
+    height: 90%;
+    padding: 50px;
+    object-fit: contain;
+}
+
+.game__button-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+.white-button {
+    width: 25%;
+	height: 70%;
+}
+

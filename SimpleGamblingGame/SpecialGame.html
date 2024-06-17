@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Welcome to GameWorld!</title>
+      
+	<!-- Loads a CSS style file -->
+	<link rel="stylesheet" href="WorkingStyles.css">
+	
+    <!-- Loads a javascript library file -->
+    <script src="WorkingLibrary.js"></script>
+  </head>
+
+  <body>
+	<p class="pageTitle" id="pageTitle_id"></p>
+	 
+	<div class="workingContainer"> 
+    <div class="workingSpace" id="workingSpace_id">
+		<div class="game__board">
+            <div class="game__score">
+				<p class="game__score-item pc"> PC : <strong id="score-pc"></strong> </p>
+				<span>           VS      </span>
+                <p class="game__score-item player"> Player : <strong id="score-player"></strong> </p>
+            </div>
+            <div class="game__pc-selection">
+                <img src="scissors.png" alt="컴퓨터 선택: 가위" class="game__pc-selection--image" id="pc-image" />
+            </div>
+            <div class="game__button-wrapper">
+            <button type="button" class="white-button" id="scissors-button"> scissors </button>
+            <button type="button" class="white-button" id="rock-button"> rock </button>
+            <button type="button" class="white-button" id="paper-button"> paper </button>
+            </div>
+        </div>
+	</div>
+    <div class="buttonSpace">
+      <button style="background-color:MediumSeaGreen;" onclick="PlayGame()" class="btn">Easy Mode</button>
+	  <button style="background-color:Tomato;" onclick="PlayGame2()" class="btn">Hard Mode</button>
+      <button onclick="ClearWorkingSpace()" class="btn">Clear!</button>
+	  <button style="background-color:DodgerBlue;" onclick="location.href='SpecialGame.html'" class="btn">Special Game</button>
+    </div>
+	<div>
+    <!-- Loads your javascript working file -->
+    <script src="MyWorkingSpace.js"></script>
+	<script src="SpecialGame.js"></script>
+  </body>
+</html>

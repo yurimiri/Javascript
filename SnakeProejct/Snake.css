@@ -1,0 +1,80 @@
+body {
+	/*image resource : https://kr.freepik.com/free-photo/padoga-issneun-8biteu-geulaepig-pigsel-jangmyeon_137494782.htm#fromView=search&page=1&position=0&uuid=5dbc47a8-b3d0-42ce-98f1-4c3a3749b874" */
+    background-image: url('background-image.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    color: black; 
+    text-shadow: 2px 2px 4px #000000; 
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.grid {
+    width: 800px;
+    height: 800px;
+    border: 1px solid red;
+    margin: 20px auto;
+	background-color: rgba(255, 255, 255, 0.8);
+  }
+
+.grid div {
+    width: 38px;
+    height: 38px;
+    border: 1px black dotted;
+	float: left;
+}
+  
+ .info {
+	width: 250px;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border: 1px solid black;
+}
+  
+.buttonGroup
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+/*image resource : https://www.pngwing.com/ko/search?q=%ED%8E%AD%EA%B7%84+%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8"*/
+.snake {
+    background-image: url('snake-image.png'); 
+    background-size: cover;
+}
+
+/*image resource : "https://www.flaticon.com/kr/free-icons/" */
+.food {
+    background-image: url('food-image.png');
+    background-size: cover; 
+}
+
+.wall{
+    background-size: cover; 
+}
+
+.empty {
+    background-color: white;
+}
+
+/*image resource : https://www.pngegg.com/ko/png-ehwyr"*/
+.compSnake {
+    background-image: url('com-image.png'); 
+    background-size: cover; 
+}

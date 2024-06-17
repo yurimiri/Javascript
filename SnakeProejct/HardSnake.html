@@ -1,0 +1,31 @@
+
+<html>
+<head>
+    <title>Yurim Son - Snake Project</title>
+    <link rel="stylesheet" href="Snake.css">
+	<script src="HelperLibrary.js"></script>
+    <script src="HardSnake.js"></script>
+</head>
+<body>
+	<div class="title">
+        <h1>Hard Mode</h1>
+    </div>
+    <div class="buttonGroup">
+        <button style="background-color:red;" onclick="StartGame()"class="start">Start Game</button>
+		<button style="background-color:blue;" onclick="location.href='Snake.html'" class="btn">Main</button>
+    </div>
+    <div class="gameContainer">
+        <div id="grid_id" class="grid"></div>
+        <div class="info">
+            <h2>This is Hard Mode.</h2>
+            <p id="playerScore">Player Score: 0</p>
+            <p id="compScore">Computer Score: 0</p>
+			<p>Battle against the computer!
+			You win the game by eating a total of 10 fish first. 
+			The more fish you eat, the faster your speed increases.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+

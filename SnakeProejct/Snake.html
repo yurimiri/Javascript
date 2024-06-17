@@ -1,0 +1,34 @@
+
+<html>
+<head>
+    <title>Yurim Son - Snake Project</title>
+    <link rel="stylesheet" href="Snake.css">
+	<script src="HelperLibrary.js"></script>
+    <script src="Snake.js"></script>
+</head>
+<body>
+	<div class="title">
+        <h1>Snake Project</h1>
+    </div>
+    <div class="buttonGroup">
+        <button style="background-color:blue;" onclick="StartGame()"class="start">Start!</button>
+		<button style="background-color:orange;" onclick="PauseGame()" class="btn">Pause</button>
+        <button style="background-color:purple;" onclick="RestartGame()" class="btn">Restart</button>
+		<button style="background-color:green;" onclick="location.href='EasySnake.html'" class="btn">Easy Mode</button>
+		<button style="background-color:red;" onclick="location.href='HardSnake.html'" class="btn">Hard Mode</button>
+    </div>
+    <div class="gameContainer">
+        <div id="grid_id" class="grid"></div>
+        <div class="info">
+            <h2>Score: <span id="score">0</span></h2>
+            <h2>Game Description</h2>
+            <p>This is Practice Mode. 
+			Eat the fish to grow and increase your score. 
+			Have fun!
+			</p>
+        </div>
+    </div>
+</body>
+</html>
+
+

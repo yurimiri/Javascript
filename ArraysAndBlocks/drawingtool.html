@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Drawing Tool</title>
+
+    <!-- Loads a CSS style file -->
+    <link rel="stylesheet" href="WorkingStyles.css">
+
+    <!-- Loads a javascript library file -->
+    <script src="WorkingLibrary.js"></script>
+  </head>
+
+  <body>
+    <p class="pageTitle" id="pageTitle_id"></p>
+		<div class="workingContainer">
+		  
+			<!-- Answers go here -->
+			<div class="workingSpace" id="workingSpace_id"></div>
+			  
+			<!-- Trigger buttons -->
+			<div class="buttonSpace">
+				brush size (max:20) <input id="brushsize" type="number" min="1" max="20" value="1" ></input>
+				<div><br /></div>
+				<div class="color_change" id="color">
+					<button onclick="colorChange('black')" style="background-color: black; width: 45px; height: 45px; border-radius: 25px;"></button>
+					<button onclick="colorChange('blue')" style="background-color: blue; width: 45px; height: 45px; border-radius: 25px;"></button>
+					<button onclick="colorChange('red')" style="background-color: red; width: 45px; height: 45px; border-radius: 25px;"></button>
+					<button onclick="colorChange('green')" style="background-color: green; width: 45px; height: 45px; border-radius: 25px;"></button>
+					<button onclick="colorChange('yellow')" style="background-color: yellow; width: 45px; height: 45px; border-radius: 25px;"></button>
+					<button onclick="colorChange('pink')" style="background-color: pink; width: 45px; height: 45px; border-radius: 25px;"></button>
+					<button onclick="colorChange('skyblue')" style="background-color: skyblue; width: 45px; height: 45px; border-radius: 25px;"></button>
+					<button onclick="colorChange('violet')" style="background-color: violet; width: 45px; height: 45px; border-radius: 25px;"></button>
+					<button onclick="colorChange('lime')" style="background-colorcolor: lime; width: 45px; height: 45px; border-radius: 25px;"></button>
+				</div>
+				<div><br /></div>
+				<button onclick="colorChange('white')" class="btn">Erase</button>
+				<button onclick="save()" class="btn">Save</button>
+				<button onclick="load()" class="btn">Load</button>
+				<div><br /></div>
+				<button onclick="grid()" class="btn">Grid</button>
+				<button onclick="clearAll()" class="btn">Clear!</button>
+				<button style="background-color:orange;" onclick="location.href='index.html'" class="btn">Main</button>
+			</div>
+		</div>
+    <!-- Errors will show here -->
+    <div class="errorSpace" id="errorSpace_id"></div>
+
+    <!-- function code goes here -->
+    <div class="codeSpace" id="codeSpace_id"></div>
+
+  </body>
+
+  <footer>
+    <!-- Loads your javascript working file -->
+	<script src="drawingTool.js"></script>
+  </footer>
+
+</html>

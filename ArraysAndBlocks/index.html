@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+
+    <!-- Loads a CSS style file -->
+    <link rel="stylesheet" href="WorkingStyles.css">
+
+    <!-- Loads a javascript library file -->
+    <script src="WorkingLibrary.js"></script>
+  </head>
+
+  <body>
+    <p class="pageTitle" id="pageTitle_id"></p>
+
+    <div class="workingContainer">
+      
+      <!-- Answers go here -->
+      <div class="workingSpace" id="workingSpace_id"></div>
+      
+      <!-- Trigger buttons -->
+      <div class="buttonSpace">
+		  <button onclick="start()" class="btn">Start!</button>
+		  <button onclick="addBlockToArray()" class="btn">Add Red Block to Array</button>
+		  <button onclick="drawBlockArray()" class="btn">Draw Array</button>
+		  <button onclick="addRandomColorBlocktoArray()" class="btn">Add Random Color Block to Array</button>	  
+		  <button onclick="startMain(MainLoop, 100)" class="btn">Start Main Loop</button>
+		  <button onclick="stopMain()" class="btn">Stop Main Loop</button>
+		  <button onclick="createNestedArray()" class="btn">CreateNestedArray</button>
+		  <button onclick="clearAll()" class="btn">Clear!</button>
+		  
+		  
+		  <button style="background-color:yellow;" onclick="simpleidea()" class="btn">Simple Idea</button>
+		  <button style="background-color:green;" onclick="location.href='drawingtool.html'" class="btn">Drawing Tool</button>
+		  
+      </div>
+    </div>
+
+    <!-- Errors will show here -->
+    <div class="errorSpace" id="errorSpace_id"></div>
+
+    <!-- function code goes here -->
+    <div class="codeSpace" id="codeSpace_id"></div>
+
+  </body>
+
+  <footer>
+    <!-- Loads your javascript working file -->
+    <script src="MyWorkingSpace.js"></script>
+  </footer>
+
+</html>
